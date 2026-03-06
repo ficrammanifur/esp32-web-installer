@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Web Installer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 Web Installer</h1>
+    <p class="subtitle">Flash your ESP32 firmware directly from the browser</p>
+
+    <div id="status">Status: Not connected</div>
+
+    <div class="buttons">
+      <button id="connectBtn">Connect ESP32</button>
+      <button id="installBtn" disabled>Install Firmware</button>
+    </div>
+
+    <div class="progress-container">
+      <div id="progressBar"></div>
+    </div>
+
+    <div id="log" class="log"></div>
+  </div>
+
+  <script src="https://unpkg.com/esptool-js@latest/dist/web/index.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/flasher.js"></script>
+</body>
+</html>
