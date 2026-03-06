@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>ESP32 Web Installer</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- favicon opsional -->
+  <link rel="icon" href="data:,">
 </head>
 <body>
   <div class="container">
@@ -24,8 +26,9 @@
     <div id="log" class="log"></div>
   </div>
 
+  <!-- esptool-js -->
   <script src="https://unpkg.com/esptool-js@latest/dist/web/index.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/flasher.js"></script>
+  <!-- gunakan type="module" agar import/export valid -->
+  <script type="module" src="js/flasher.js"></script>
 </body>
 </html>
